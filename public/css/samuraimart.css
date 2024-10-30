@@ -308,11 +308,7 @@ a img:hover {
   }
 
   /* 自分で追加 */
-  .grid-sp-recommend {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-
+  .grid-sp-recommend,
   .grid-sp-product {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -329,12 +325,13 @@ a img:hover {
   .logo-sp {
     display: block;
     width: 100%;
+    text-align: center;
   }
 
   .user-sp {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
   }
 }
 

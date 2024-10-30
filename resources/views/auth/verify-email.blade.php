@@ -13,6 +13,16 @@
             <div class="text-center">
                 <a href="{{ url('/') }}" class="btn samuraimart-submit-button w-75 text-white">トップページへ</a>
             </div>
+
+            <form method="POST" action="{{ route('logout') }}">
+            @csrf
+ 
+            <div class="text-center mt-2">
+                <button type="submit" class="btn ">
+                    ログアウトはこちら
+                </button>
+            </div>
+         </form>
         </div>
     </div>
 </div>

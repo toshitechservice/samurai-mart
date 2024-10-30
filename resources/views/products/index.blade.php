@@ -3,11 +3,11 @@
 @section('content')
 <div class="container pt-2">
     <div class="row">
-        <div class="col-md-2">
+        <div class="col-md-2 order-sp-sidebar">
             @component('components.sidebar', ['categories' => $categories, 'major_categories' => $major_categories])
             @endcomponent
         </div>
-        <div class="col">
+        <div class="col order-sp-product">
             @if ($category !== null)
                 <nav class="mb-4" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
                     <ol class="breadcrumb">
@@ -53,7 +53,7 @@
                     </select>
                 </form>
             </div>
-            <div class="row">
+            <div class="row grid-sp-product">
                 @foreach($products as $product)
                     <div class="col-md-3 mb-3">
                         <a href="{{ route('products.show', $product) }}">
